@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, createContext, useContext } from 'react';
 import LoginPage from './LoginPage';
-import ServiceSelector from './ServiceSelector';
+import ServiceSelector from '../components/ServiceSelector';
 import RichMenuPage from './RichMenuPage';
 import UIDManagerPage from './UIDManagerPage';
 import Navbar from './Navbar';

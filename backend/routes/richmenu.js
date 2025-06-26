@@ -6,6 +6,7 @@ const router = express.Router();
 // 取得 RichMenu 列表
 router.get('/list', /*authenticateToken,*/ async (req, res) => {
     // TODO: 依 service 查詢 DB 或 LINE API
+    // TODO: 請依需求實作 DB 查詢、LINE API 呼叫等功能
     // const { service } = req.query;
     // const menus = await db.getRichMenus(service);
     // res.json(menus);
@@ -15,6 +16,7 @@ router.get('/list', /*authenticateToken,*/ async (req, res) => {
 // 建立 RichMenu
 router.post('/create', /*authenticateToken,*/ async (req, res) => {
     // TODO: 解析 multipart/form-data，建立 RichMenu
+    // TODO: 請依需求實作 DB 查詢、LINE API 呼叫等功能
     // const { service, json } = req.body;
     // const image = req.file;
     // 呼叫 LINE API 建立
@@ -24,6 +26,7 @@ router.post('/create', /*authenticateToken,*/ async (req, res) => {
 // 設定預設 RichMenu
 router.post('/default', /*authenticateToken,*/ async (req, res) => {
     // TODO: 設定預設 RichMenu
+    // TODO: 請依需求實作 DB 查詢、LINE API 呼叫等功能
     // const { service, richmenuId } = req.body;
     res.json({ success: true });
 });
@@ -31,6 +34,7 @@ router.post('/default', /*authenticateToken,*/ async (req, res) => {
 // 刪除 RichMenu
 router.post('/delete', /*authenticateToken,*/ async (req, res) => {
     // TODO: 刪除 RichMenu
+    // TODO: 請依需求實作 DB 查詢、LINE API 呼叫等功能
     // const { service, richmenuId } = req.body;
     res.json({ success: true });
 });
