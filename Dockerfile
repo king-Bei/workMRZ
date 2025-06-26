@@ -23,7 +23,7 @@ COPY --from=backend-build /app/backend ./
 # Copy frontend build to backend public folder
 COPY --from=frontend-build /frontend/frontend/build ./public
 
-# Copy .env if you want to bake it in (建議用 Secret Manager 注入)
+# Ensure .env is excluded from the image unless explicitly copied
 # COPY backend/.env .env
 
 ENV NODE_ENV=production
